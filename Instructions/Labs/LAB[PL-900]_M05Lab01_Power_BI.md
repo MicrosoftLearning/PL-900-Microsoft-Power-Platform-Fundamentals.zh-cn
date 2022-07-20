@@ -2,12 +2,12 @@
 lab:
   title: 实验室 5：如何生成简单仪表板
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812930"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125733"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>模块 5：Power BI 入门
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>实验室：如何生成简单仪表板
@@ -88,9 +88,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 5.  单击饼图外的报表以取消选择它，然后选择“可视化效果”窗格中的堆积柱形图。
 
-6.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 将“访问”字段拖放到“值”框中 。
+6.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 拖动“访问”字段并将其放入“Y 轴”目标框。
 
-7.  拖动“开始”字段并将其放入“轴”目标框。
+7.  拖动“开始”字段并将其放入“X 轴”目标框。
 
 8.  在“可视化效果”窗格中，单击“年”和“季度”旁边的 x，只为轴留下“月”和“天”总计    。
 

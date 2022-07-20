@@ -2,12 +2,12 @@
 lab:
   title: 实验室 3：如何构建模型驱动的应用
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: ed98e1f2c2ff900f84b98910e0ef2d14d130f462
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: c69ca883cc8f8c8b00ed3f67fb18f93b035726e3
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458370"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125757"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>模块 3：Power Apps 入门
 ## <a name="lab-how-to-build-a-model-driven-app"></a>实验室：如何构建模型驱动的应用
@@ -234,7 +234,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 2. 新建“Contact”
 
-    0. 应用应该会打开“我的可用联系人”视图。 如果未打开，请选择左侧的“访问”。
+    0. 应用应该会打开“我的可用联系人”视图。 如果未打开，请选择左侧的“联系人”。
 
     1. 在顶部菜单中单击“新建”。
 
