@@ -1,15 +1,15 @@
 ---
 lab:
-  title: 实验室：验证实验室环境
+  title: 实验室 0：验证实验室环境
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: e69074549dddd4494db53a9ccb9ebfb3ae198d48
-ms.sourcegitcommit: fc79a9b68a8235b37fd90ef84ba8ae1aa2e581f5
+ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "144424698"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154391"
 ---
-# <a name="module-0-course-introduction"></a>模块 0：课程简介
+# <a name="lab-0-validate-lab-environment"></a>实验室 0：验证实验室环境
 
 ## <a name="scenario"></a>方案
 
@@ -19,42 +19,52 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 在整个课程中，你将生成应用程序并执行自动化，以使 Bellows College 的管理和安全人员可以管理和控制校园建筑的出入情况。
 
-在此模块 0 实验室中，你将获得 Power Platform 试用版租户并可以访问 Power Platform 管理中心。 在管理中心中，你将创建自己的“实践”环境，你将在该环境中开展大部分实验室工作。
+在此模块 0 实验室中，你将获得 Power Platform 试用版并可以访问 Power Platform 管理中心。 在管理中心中，你将创建自己的“实践”环境，并将在该环境中开展大部分实验室工作。
 
 ## <a name="exercise-1--setup"></a>练习 1 - 设置
 
-### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>任务 1 - 获取你的 Microsoft Power Platform 试用版租户
+### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>任务 \#1 - 获取你的 Microsoft Power Platform 试用版租户
 
-1.  复制授权实验室主机托管服务商提供的 Microsoft 365 凭据 。
+1. 复制授权实验室主机托管服务商提供的 Microsoft 365 凭据 。
 
-2.  导航到 <https://powerapps.microsoft.com> 并单击“免费开始”。
+1. 导航到 <https://powerapps.microsoft.com> 并单击“免费开始”。
 
-3.  在“开始使用”下，在提示“输入你的工作电子邮件地址”的文本框中输入你的 Microsoft 365 凭据中的电子邮件地址。
+1. 在“让我们开始吧！”下，在提示“输入你的工作电子邮件地址”的文本框中，输入你的 Microsoft 365 凭据中的电子邮件地址，然后单击“下一步”。
 
-4.  将会显示一条说明你已经拥有 Microsoft 帐户的提示。 选择“登录”。
+1. 如果看到一条指明你已经拥有 Microsoft 帐户的提示。 选择“登录”。
 
-5.  输入授权实验室主机托管服务提供商提供的密码并登录。
+1. 输入授权实验室主机托管服务提供商提供的密码并登录。
 
-6.  选择“是”保持登录状态。
+1. 选择“是”保持登录状态。
 
-7.  填写你的帐户信息，然后选择“开始”以注册 Microsoft Power Platform 试用版。
+1. 请勿更改国家/地区。
+
+1. 对于电话号码，请输入 01234567890。
+
+1. 填写你的帐户信息，然后选择“开始”以注册 Microsoft Power Platform 试用版。
+
+1. 在确认屏幕上，单击“开始使用”。
+
+1. 如果看到输入联系人详细信息的提示，请单击“X”以关闭弹出窗口。
 
 ### <a name="task-2--create-environment"></a>任务 \#2 - 创建环境
 
-1.  如果出现系统提示，请访问 <https://admin.powerplatform.microsoft.com> 并使用你的 Microsoft 365 凭据登录。
+1. 如果出现系统提示，请导航到 <https://admin.powerplatform.microsoft.com>，并使用你的 Microsoft 365 凭据登录。
 
-2.  选择“环境”，然后单击“+新建”。
+1. 如果看到“欢迎使用”弹出窗口，请单击“开始使用”。
 
-    1.  对于“名称”，输入“[我的姓名缩写] 实践”。 （示例：AJ 实践。）
+1. 选择“环境”，然后单击“+ 新建”。
 
-    2.  对于“类型”，选择“试用版”（请勿选择“试用版(基于订阅)”选项）。
+    1. 对于“名称”，请输入“[我的姓名首字母缩写] 实践”（示例：AJ 实践）。
 
-    3.  将“为此环境创建数据库?”的切换开关更改为“是”。
+    1. 对于“类型”，选择“试用版”（请勿选择“试用版(基于订阅)”选项）。
 
-    4.  将所有其他选择保留为默认设置，然后单击“下一步”。
+    1. 将“为此环境创建数据库?”的切换开关更改为“是”。
 
-    5.  在下一个选项卡上，将所有选择保留为默认设置，然后单击“保存”。
+    1. 将所有其他选择保留为默认设置，然后单击“下一步”。
 
-3.  你的“实践”环境现在应该显示在“环境”列表中。
+    1. 在下一个选项卡上，将所有选择保留为默认设置，然后单击“保存”。
 
->   完成部署可能需要几分钟的时间。 根据需要刷新页面。
+1. 你的“实践”环境现在应该显示在“环境”列表中。
+
+> 完成部署可能需要几分钟的时间。 根据需要刷新页面。
