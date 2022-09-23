@@ -2,17 +2,16 @@
 lab:
   title: 实验室 5：如何生成简单仪表板
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812930"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154439"
 ---
-# <a name="module-5-get-started-with-power-bi"></a>模块 5：Power BI 入门
-## <a name="lab-how-to-build-a-simple-dashboard"></a>实验室：如何生成简单仪表板
+## <a name="lab-5-how-to-build-a-simple-dashboard"></a>实验室 5：如何生成简单仪表板
 
-# <a name="scenario"></a>方案
+## <a name="scenario"></a>方案
 
 Bellows College 是一所教育机构，校园内有多座建筑。 当前，校园访客被记录在纸质日记中。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
@@ -20,43 +19,33 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 在整个课程中，你将生成应用程序并执行自动化，以使 Bellows College 的管理和安全人员可以管理和控制校园建筑的出入情况。
 
-在本实验室中，你将构建一个 Power BI 仪表板，以可视化方式显示有关校园访问的数据。
+在本实验室中，你将构建一个 Power BI 报表和仪表板，以可视化方式显示有关校园访问的数据。
 
-# <a name="high-level-lab-steps"></a>概要实验室步骤
+## <a name="high-level-lab-steps"></a>概要实验室步骤
 
 我们将按照以下步骤设计和创建 Power BI 仪表板：
 
--   连接到 Dataverse
-
--   转换数据以包括对相关行（查找）的用户友好描述
-
--   创建并发布包含各种校园访问信息可视化效果的报表
+-   创建一个包含各种校园访问信息可视化效果的报表
 
 -   利用用户自然语言查询来生成额外的可视化效果
 
--   生成 Power BI 仪表板的移动视图
-
 ## <a name="prerequisites"></a>先决条件
 
--   完成“模块 0 实验室 0 - 验证实验室环境”
-
--   完成“模块 2 实验室 1 - Microsoft Dataverse 简介”
+- 完成“模块 0 实验室 0 - 验证实验室环境”
+- 完成“模块 2 实验室 1 - 数据建模”
 
 ## <a name="things-to-consider-before-you-begin"></a>开始前要考虑的事项
 
 -   报告的目标受众是谁？
-
 -   受众将如何使用报告？ 典型的设备？ 位置？
-
 -   你是否有足够的数据进行可视化？
-
 -   可以使用哪些可能的特征来分析访问数据？
 
-# <a name="exercise-1-create-power-bi-report"></a>练习 \#1：创建 Power BI 报表
+## <a name="exercise-1-create-power-bi-report"></a>练习 1：创建 Power BI 报表
 
 **目的：** 在本练习中，你将根据在上一个练习中使用的 Excel 电子表格的数据创建 Power BI 报表。
 
-## <a name="task-1-prepare-power-bi-service"></a>任务 \#1：准备 Power BI 服务
+### <a name="task-1-prepare-power-bi-service"></a>任务 \#1：准备 Power BI 服务
 
 1.  在计算机上下载并保存 [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix)。
 
@@ -70,17 +59,17 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 6.  找到并选择你之前下载的 visits.pbix 文件。
 
-7.  数据加载完成后，选择 visits 报表（请注意，“类型”设置为“报表”）。 
+7.  数据加载完成后，展开“我的工作区”，并选择“visits”报表（请注意，“类型”设置为“报表”）。
 
 8.  单击 **“编辑”** 。 如果“编辑”菜单项不可见，请单击“...”，然后选择“编辑”。  
 
-现在，你已经设置了 Power BI 服务以用于你的实验室。 
+现在，你已经设置了 Power BI 服务以用于你的实验室。
 
-## <a name="task-2-create-chart-and-time-visualizations"></a>任务 \#2：创建图表和时间可视化
+### <a name="task-2-create-chart-and-time-visualizations"></a>任务 \#2：创建图表和时间可视化
 
 1.  按“可视化效果”面板中的“饼图”图标插入图表 。
 
-2.  按“字段”窗格中 bc_name 旁边的下拉箭头。 拖动“建筑”字段并将其放入“图例” 框。
+2.  按下“字段”窗格中 bc_building 旁边的下拉箭头。 拖动“建筑”字段并将其放入“图例” 框。
 
 3.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 将“访问”字段拖放到“值”框中 。
 
@@ -88,9 +77,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 5.  单击饼图外的报表以取消选择它，然后选择“可视化效果”窗格中的堆积柱形图。
 
-6.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 将“访问”字段拖放到“值”框中 。
+6.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 拖动“访问”字段并将其放入“Y 轴”目标框。
 
-7.  拖动“开始”字段并将其放入“轴”目标框。
+7.  拖动“开始”字段并将其放入“X 轴”目标框。
 
 8.  在“可视化效果”窗格中，单击“年”和“季度”旁边的 x，只为轴留下“月”和“天”总计    。
 
@@ -100,15 +89,15 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
     1.  在饼图上单击各种构建切片，并观察时间报告上的变化。
 
-    2.  单击柱形图。 按向下箭头打开“向下钻取”模式（或右键单击图表，然后选择“向下钻取”），然后单击一列以向下钻取到下一个级别（天）。  
-    
+    2.  单击柱形图。 按向下箭头打开“向下钻取”模式（或右键单击图表，然后选择“向下钻取”），然后单击一列以向下钻取到下一个级别（天）。 
+
     3.  向上和向下钻取，选择时间柱形图上的各种条形，以观察饼图报告中的变化。
 
 11. 按下“保存”以保存进行中的工作。
 
-# <a name="exercise-2-create-power-bi-dashboard"></a>练习 \#2：创建 Power BI 仪表板
+## <a name="exercise-2-create-power-bi-dashboard"></a>练习 2：创建 Power BI 仪表板
 
-## <a name="task-1-create-power-bi-dashboard"></a>任务 \#1：创建 Power BI 仪表板
+### <a name="task-1-create-power-bi-dashboard"></a>任务 \#1：创建 Power BI 仪表板
 
 1.  打开上一个任务中生成的报表。
 
@@ -118,13 +107,11 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 4.  输入“校园管理”作为“仪表板名称”， 然后按“固定活动页”。
 
-5.  依次选择顶部的“我的工作区”、“[你的姓氏] 校园管理”仪表板。
+5.  弹出窗口将提示你仪表板已创建。 选择“转到仪表板”。
 
-6.  弹出窗口将提示你仪表板已创建。 选择“转到仪表板”。
+6.  测试显示的饼图和条形图的交互性。
 
-7.  测试显示的饼图和条形图的交互性。
-
-## <a name="task-2-add-visualizations-using-natural-language"></a>任务 \#2：使用自然语言添加可视化
+### <a name="task-2-add-visualizations-using-natural-language"></a>任务 \#2：使用自然语言添加可视化
 
 1.  在“校园管理”仪表板内，选择顶部的“提出与数据有关的问题”栏。
 

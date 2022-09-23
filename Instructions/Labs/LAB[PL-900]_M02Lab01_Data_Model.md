@@ -2,16 +2,16 @@
 lab:
   title: 实验室 1：数据建模
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 9edefbdf214d5a0f2e0693ffdf024dfc05c032c5
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: 93bccc216d07bc3f609755887c2c57fcfdaa8e4d
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458358"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154403"
 ---
-# <a name="module-2-introduction-to-microsoft-dataverse"></a>模块 2：Microsoft Dataverse 简介
+# <a name="lab-1-data-modeling"></a>实验室 1：数据建模
 
-# <a name="scenario"></a>方案
+## <a name="scenario"></a>方案
 
 Bellows College 是一所教育机构，校园内有多座建筑。 目前，校园访问记录在纸质日报上。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
@@ -21,58 +21,59 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 在本实验室中，你将访问环境，创建 Microsoft Dataverse 数据库并创建跟踪更改情况的解决方案。 你还将创建一个数据模型来满足以下要求：
 
--   R1 - 跟踪计划校园访问的信息
+- R1 - 跟踪计划校园访问的信息
 
--   R2 - 记录基本信息以识别和跟踪访问者
+- R2 - 记录基本信息以识别和跟踪访问者
 
--   R3 - 安排、记录和管理访问
+- R3 - 安排、记录和管理访问
 
 最后，你将示例数据导入 Microsoft Dataverse。
 
-# <a name="high-level-lab-steps"></a>概要实验室步骤
+## <a name="high-level-lab-steps"></a>概要实验室步骤
 
 为了准备学习环境，你将：
 
-* 创建解决方案和发布者
-* 添加满足应用程序要求所需的新组件和现有组件。 请参阅[数据模型文档](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)以获取元数据说明（表和关系）。 你可以按住 Ctrl 键单击或右键单击链接以在新窗口中打开数据模型文档。
-* 创建“访问”表
-* 使用 Excel 电子表格导入 Visit 数据
+- 请参阅[数据模型文档](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)以获取元数据说明（表和关系）。 你可以按住 Ctrl 键单击或右键单击链接以在新窗口中打开数据模型文档。
+- 创建“访问”表
+- 使用 Excel 电子表格导入 Visit 数据
 
-## <a name="prerequisites"></a>先决条件：
+## <a name="prerequisites"></a>先决条件
 
--   完成“模块 0 实验室 0 - 验证实验室环境”
+- 完成“模块 0 实验室 0 - 验证实验室环境”
 
-## <a name="things-to-consider-before-you-begin"></a>开始前要考虑的事项：
+## <a name="things-to-consider-before-you-begin"></a>开始前要考虑的事项
 
--   命名约定 - 仔细键入名称。
+- 命名约定 - 仔细键入名称。
 
-# <a name="exercise-1-create-new-table"></a>练习 \#1：创建新表
+## <a name="exercise-1-create-new-table"></a>练习 1：创建新表
 
-**目的：** 在本练习中，你将为访问创建新的自定义表。 
+**目的：** 在本练习中，你将为访问创建新的自定义表。
 
-## <a name="task--1-create-visit-table-and-columns"></a>任务 \# 1：创建 Visit 表和列
+### <a name="task-1-create-visit-table-and-columns"></a>任务 \#1：创建 Visit 表和列
 
 “访问”表将包含有关校园访问的信息，包括访客、每次访问的计划时间和实际时间。
 
 我们希望为每次访问分配一个唯一的号码，当访客在访问签到过程中被询问时，他/她可以很容易地输入并解释该号码。
 
->   我们用“时区无关”行为记录日期和时间信息，因为访问时间始终与建筑物所在的本地时间一致，因此当从不同时区查看时，不应更改此信息。
+> 我们用“与时区无关”行为来记录日期和时间信息，因为访问时间始终与建筑物所在的本地时间一致，因此当从不同时区查看时，不应更改此信息。
 
 1. 登录到 [https://make.powerapps.com](https://make.powerapps.com/)（如果尚未登录）
 
-2. 如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
+1. 如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
 
-3. 使用左侧的导航，展开 Dataverse，然后选择“表”。
+1. 使用左侧的导航，展开 Dataverse，然后选择“表” 。
 
-4. 单击“新建表”。
+1. 单击“+ 新建表”。
 
-5. 为“显示名称”输入“Visit” 。
+1. 为“显示名称”输入“Visit” 。
 
-6. 单击“保存”  。 这将开始在后台预配表，同时可以开始添加其他列。
+1. 单击“保存”  。
 
-7. 创建表后，在“架构”部分下，选择“列” 。 
+1. 在“架构”部分下，选择“列”。
 
-8. 选择“新建列”并按如下所示进行配置： 
+1. 创建“计划开始时间”列
+
+    - 选择“+ 新建列”。
 
     - 为“显示名称”输入“计划开始时间” 。
 
@@ -80,15 +81,15 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
     - 在“必填”字段中，选择“必需业务” 。
 
-    - 展开“高级选项”部分。
+    - 展开“高级选项”。
 
-    - 在“行为”中，选择“与时区无关”。
+    - 在“时区调整”中，选择“与时区无关”。
 
     - 单击“保存” 。
 
-9. 创建“计划结束时间”列 
+1. 创建“计划结束时间”列
 
-    - 单击“添加列”。
+    - 单击“+ 新建列”。
 
     - 为“显示名称”输入“计划结束时间” 。
 
@@ -96,15 +97,15 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
     - 在“必填”字段中，选择“必需业务” 。
 
-    - 展开“高级选项”部分。
+    - 展开“高级选项”。
 
-    - 在“行为”中，选择“与时区无关”。
+    - 在“时区调整”中，选择“与时区无关”。
 
     - 单击“保存” 。
 
-10. 创建“实际开始时间”列
+1. 创建“实际开始时间”列
 
-    - 单击“添加列”。
+    - 单击“+ 新建列”。
 
     - 为“显示名称”输入“实际开始时间” 。
 
@@ -112,15 +113,15 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
     - 在“必填”字段中，将其保留为“可选” 。
 
-    - 展开“高级选项”部分。
+    - 展开“高级选项”。
 
-    - 在“行为”中，选择“与时区无关”。
+    - 在“时区调整”中，选择“与时区无关”。
 
     - 单击“保存” 。
 
-11. 创建“实际结束时间”列
+1. 创建“实际结束时间”列
 
-    - 单击“添加列”。
+    - 单击“+ 新建列”。
 
     - 为“显示名称”输入“实际结束时间” 。
 
@@ -128,15 +129,15 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
     - 在“必填”字段中，将其保留为“可选”。
 
-    - 展开“高级选项”部分。
+    - 展开“高级选项”。
 
-    - 在“行为”中，选择“与时区无关”。
+    - 在“时区调整”中，选择“与时区无关”。
 
     - 单击“保存” 。
 
-12. 创建代码列
+1. 创建代码列
 
-    - 单击“添加列”。
+    - 单击“+ 新建列”。
 
     - 为“显示名称”输入“代码” 。
 
@@ -146,9 +147,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
     - 单击“保存” 。
 
-13. 创建访客查找列
+1. 创建访客查找列
 
-    - 单击“添加列”。
+    - 单击“+ 新建列”。
 
     - 为“显示名称”输入“访客” 。
 
@@ -156,31 +157,27 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
     - 为“相关表”选择“联系人” 。
 
-    - 展开“高级选项”部分。
+    - 展开“高级选项”。
 
     - 为“关系名称”输入“visitor_id” 。
 
     - 单击“保存” 。
 
- 
-
-练习 2：导入数据
+## <a name="exercise-2-import-data"></a>练习 2：导入数据
 
 **目的：** 在本练习中，你要将示例数据导入 Dataverse 数据库。
 
-任务 #1：导入 Visits.xls 文件。
+### <a name="task-1-import-the-visitsxlsx-file"></a>任务 \#1：导入 Visits.xlsx 文件
 
 在此任务中，你将从 Excel 文件导入访问数据。
 
-1. 应将 Visits.xls 文件存储在桌面上。 如果不这样做，请下载 [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)。
+1. 应将 Visits.xlsx 文件存储在桌面上。 如果不这样做，请下载 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)。
 
 2. 如果尚未登录，请登录 [https://make.powerapps.com](https://make.powerapps.com/)。
 
 3. 如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
 
-4. 使用左侧的导航，展开 Dataverse，然后选择表。
-
-你可能会在屏幕上的“数据”>“表”中看到此内容。
+4. 使用左侧的导航，展开 Dataverse，然后选择“表” 。
 
 5. 查找并打开在上一个练习中创建的“访问”表。
 
@@ -188,36 +185,37 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 7. 从显示的菜单中，选择“上传”按钮。
 
-8. 查找并选择之前下载的 Visits.xls 文件。 （请注意，上传文件可能需要一到两分钟。 如果收到存在映射错误的消息，请不要担心，我们接下来将会修复这些问题。）
+8. 找到并选择之前下载的 Visits.xlsx 文件。 （请注意，上传文件可能需要一到两分钟。 如果收到存在映射错误的消息，请不要担心，我们接下来将会修复这些问题。）
 
-9. 选择“映射列”。
+9. 单击“映射列”（注意：可能需要向右滚动才能看到“映射列”选项）。
 
 10. 如下所示映射列：
 
-| 访问 Db 列| 源值 |
-| - |
-| 实际结束时间| 实际结束时间 |
-| 实际开始时间| 实际开始时间 |
-| 代码| 代码 |
-| 名称| 名称 |
-| 计划结束| 计划结束时间 |
-| 计划的启动| 计划开始时间 |
-
+| 访问列| 源值 |
+| - | - |
+| 实际结束时间| actual end |
+| 实际开始时间| actual start |
+| 代码| code |
+| 名称| name |
+| 计划结束| scheduled end |
+| 计划的启动| scheduled start |
 
 11. 将所有其余字段保留为“未设置”。
 
-12. 在屏幕的右上角，选择“保存更改”。
+12. 在屏幕的右上角，单击“保存更改”。
 
 13. 在“导入数据”屏幕上，验证映射状态是否显示“映射成功”。
 
-14. 选择右上角的“导入”以完成数据导入。
+14. 单击右上角的“导入”以完成数据导入。
 
 **注意：** 将数据导入表可能需要几分钟时间。 如果遇到一些错误，请不要担心，这是正常的，不会影响课程的其余部分。
 
-任务 #2：验证数据导入
+15. 单击“X”以关闭导入数据窗格。
+
+### <a name="task-2-verify-data-import"></a>任务 \#2：验证数据导入
 
 1. 导入数据后，使用屏幕左侧的导航再次选择 Visit 表。
 
-2. 验证是否可在“访问列和数据”部分下看到导入的数据。 
+2. 验证是否可在“访问列和数据”部分下看到导入的数据。
 
 恭喜，你已成功创建新表并导入了数据。
