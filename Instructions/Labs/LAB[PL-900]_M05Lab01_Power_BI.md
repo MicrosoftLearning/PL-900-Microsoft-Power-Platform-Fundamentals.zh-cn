@@ -2,18 +2,13 @@
 lab:
   title: 实验室 5：如何生成简单仪表板
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154439"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>实验室 5：如何生成简单仪表板
 
 ## <a name="scenario"></a>方案
 
-Bellows College 是一所教育机构，校园内有多座建筑。 当前，校园访客被记录在纸质日记中。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 校园管理部门希望对其访客登记系统进行现代化改造。在该系统中，由安全人员控制对建筑物的访问，所有访问都必须由主办人预先登记和记录。
 
@@ -37,7 +32,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 ## <a name="things-to-consider-before-you-begin"></a>开始前要考虑的事项
 
 -   报告的目标受众是谁？
--   受众将如何使用报告？ 典型的设备？ 位置？
+-   How will the audience consume the report? Typical device? Location?
 -   你是否有足够的数据进行可视化？
 -   可以使用哪些可能的特征来分析访问数据？
 
@@ -61,7 +56,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 7.  数据加载完成后，展开“我的工作区”，并选择“visits”报表（请注意，“类型”设置为“报表”）。
 
-8.  单击 **“编辑”** 。 如果“编辑”菜单项不可见，请单击“...”，然后选择“编辑”。  
+8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
 
 现在，你已经设置了 Power BI 服务以用于你的实验室。
 
@@ -69,15 +64,15 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 1.  按“可视化效果”面板中的“饼图”图标插入图表 。
 
-2.  按下“字段”窗格中 bc_building 旁边的下拉箭头。 拖动“建筑”字段并将其放入“图例” 框。
+2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
 
-3.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 将“访问”字段拖放到“值”框中 。
+3.  Bellows College 是一所教育机构，校园内有多座建筑。
 
 4.  使用角柄调整饼图的大小，以便所有图表组件均可见。
 
 5.  单击饼图外的报表以取消选择它，然后选择“可视化效果”窗格中的堆积柱形图。
 
-6.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 拖动“访问”字段并将其放入“Y 轴”目标框。
+6.  当前，校园访客被记录在纸质日记中。
 
 7.  拖动“开始”字段并将其放入“X 轴”目标框。
 
@@ -89,7 +84,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
     1.  在饼图上单击各种构建切片，并观察时间报告上的变化。
 
-    2.  单击柱形图。 按向下箭头打开“向下钻取”模式（或右键单击图表，然后选择“向下钻取”），然后单击一列以向下钻取到下一个级别（天）。 
+    2.  无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
     3.  向上和向下钻取，选择时间柱形图上的各种条形，以观察饼图报告中的变化。
 
@@ -101,13 +96,13 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 1.  打开上一个任务中生成的报表。
 
-2.  在菜单上选择“固定到仪表板”。 根据布局，你可能需要按“...”以显示其他菜单项。
+2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
 
 3.  在“固定到仪表板”提示上选择“新建仪表板” 。
 
 4.  输入“校园管理”作为“仪表板名称”， 然后按“固定活动页”。
 
-5.  弹出窗口将提示你仪表板已创建。 选择“转到仪表板”。
+5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
 
 6.  测试显示的饼图和条形图的交互性。
 
@@ -115,7 +110,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 1.  在“校园管理”仪表板内，选择顶部的“提出与数据有关的问题”栏。
 
-2.  输入问答区域中“按访问次数划分的建筑”。 将显示条形图。
+2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
 
 3.  选择“固定视觉对象”。
 
@@ -123,7 +118,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 5.  单击“退出问答”。
 
-“校园管理”仪表板上应会显示三个视觉对象。 可能需要向下滚动才能看到新的“问答”视觉对象。
+Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
 
 你的仪表板应类似如下所示：
 

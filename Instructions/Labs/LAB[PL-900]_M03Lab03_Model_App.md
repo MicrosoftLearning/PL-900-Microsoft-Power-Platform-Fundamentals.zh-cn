@@ -2,18 +2,13 @@
 lab:
   title: 实验室 3：如何构建模型驱动的应用
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154415"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>实验室 3：如何构建模型驱动的应用
 
 ## <a name="scenario"></a>方案
 
-Bellows College 是一所教育机构，校园内有多座建筑。 当前，校园访客被记录在纸质日记中。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 校园管理部门希望对其访客登记系统进行现代化改造。在该系统中，由安全人员控制对建筑物的访问，所有访问都必须由主办人预先登记和记录。
 
@@ -66,7 +61,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 4. 在“数据体验”部分下，选择“表单”，然后单击以打开具有“主要”表单类型的信息表单  。
 
-**重要提示：** 由于默认情况下所有表单都称为“信息”，因此请确保验证所选表单的表单类型为“主要”而不是其他类型。 表单默认有两个字段：“名称”和“所有者”。
+<bpt id="p1">**</bpt>IMPORTANT:<ept id="p1">**</ept> Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of <bpt id="p2">**</bpt>Main<ept id="p2">**</ept> and not something else. By default, the form has two fields: Name and Owner.
 
 5. 在屏幕右侧的“属性”面板中，选择“显示名称”字段，并将其更改为“主要信息” 。
 
@@ -78,25 +73,25 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
     1. **计划结束日期**
 
-    1. 实际开始日期
+    1. **** 实际开始日期
 
-    1. 实际结束日期
+    1. **** 实际结束日期
 
 7. 拖动“代码”列并将其拖到表单页眉处。
 
-标题是表单的右上角区域。 你可能需要折叠屏幕右侧的“属性”面板才能看到表单上的字段。
+The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
 
 8. 在“代码”字段仍处于选中状态时，选中屏幕右侧“属性”面板中的“只读字段”复选框 。
 
-9. 选择“所有者”字段。 在“属性”面板中将“标签”更改为“主机”。 
+9. Select <bpt id="p1">**</bpt>Owner<ept id="p1">**</ept> field. In the Properties panel, change the <bpt id="p1">**</bpt>Label<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Host<ept id="p2">**</ept>
 
 10. 单击右上方的“保存“，然后等待保存完成。
 
 11. 单击右上方的“发布”，并等待发布完成。
 
-12. 如果在新的浏览器标签页或窗口中打开了编辑视图，请将其关闭。 否则，请单击屏幕左上方的“上一步”。 现在应返回到 Visit 表的“表单”。
+12. Bellows College 是一所教育机构，校园内有多座建筑。
 
-13. 使用左上角的痕迹导航（“表”>“访问”>“表单”）。 选择“访问”以返回到“访问”表的主屏幕 。
+13. 当前，校园访客被记录在纸质日记中。
 
 ### <a name="task-2-edit-active-visits-view"></a>任务 \#2：编辑“活跃访问”视图
 
@@ -114,7 +109,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
     4. **计划结束日期**
 
-3. 单击“创建时间”列并选择“删除”。 现在将从视图中删除“创建时间”字段。
+3. 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
 4. 重设各个列的宽度以适应数据。
 
@@ -138,13 +133,13 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 5. 选择“计划开始时间”作为字段，然后在下拉菜单中选择“今天”作为条件。
 
-6. 在“架构”属性中 单击“状态”行上的“...”，然后单击“删除”以删除该筛选条件 。
+6. Click the <bpt id="p1">**</bpt>…<ept id="p1">**</ept> on the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> row and click <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> to delete that filter condition.
 
-7. 按“确定”以保存该条件。 视图现已经过筛选，仅显示计划开始日期为今天的记录。
+7. Press <bpt id="p1">**</bpt>Ok<ept id="p1">**</ept> to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
 
 8. 在视图中添加“实际开始时间”和“实际结束时间”字段。
 
-**注意：** 由于我们不再筛选视图状态，因此我们将获得今天所有的访问，包括已完成的访问。 这些字段有助于区分完成的访问和进行中的访问。
+<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 1. 单击“ **保存**”。
 
@@ -230,15 +225,15 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 2. 新建“Contact”
 
-    1. 应用应该会打开“我的可用联系人”视图。 如果未打开，请选择左侧导航中的“联系人”。
+    1. The app should open to the <bpt id="p1">**</bpt>My Active Contacts<ept id="p1">**</ept> view. If it does not, select Contacts on the left-hand navigation.
 
     1. 在顶部菜单中单击“新建”。
 
     1. 在“名字”中输入“John”，在“姓氏”中输入“Doe” 。
 
-    1. 在“电子邮件”中输入你的个人电子邮件。 这将在将来的实验室中使用，你将收到一封电子邮件。
+    1. Provide your personal email as <bpt id="p1">**</bpt>Email<ept id="p1">**</ept>. This will be used in a future lab where you will receive an email.
 
-    1. 单击“保存并关闭”。
+    1. 单击“保存并关闭”****。
 
     1. 现在应该可以在“我的可用联系人”视图中看到已创建的联系人。
 
@@ -258,9 +253,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
         1. **计划结束时间**：选择明天的日期和下午 3:30 作为结束时间
 
-- 单击“保存并关闭”。 这将创建“访问”，并且你应该可以在“活动访问”视图上看到。
+- Click <bpt id="p1">**</bpt>Save &amp; Close<ept id="p1">**</ept>. This will create the Visit and you should be able to see it on the Active Visits View.
 
-- 将视图更改为“今天的访问”。 由于新访问安排在明天，因此视图中不再显示该访问。
+- Change view to <bpt id="p1">**</bpt>Today’s Visits<ept id="p1">**</ept>. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
 
 4. 可以添加更多测试记录。
 
@@ -268,7 +263,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 ![](media/3-model-driven-app.png)
 
-祝贺你！ 你已创建并配置了第一个模型驱动的应用。
+Congratulations! You have created and configured your first model-driven app.
 
 ## <a name="challenges"></a>挑战
 

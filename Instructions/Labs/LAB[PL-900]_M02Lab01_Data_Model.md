@@ -2,24 +2,19 @@
 lab:
   title: 实验室 1：数据建模
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 93bccc216d07bc3f609755887c2c57fcfdaa8e4d
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154403"
 ---
+
 # <a name="lab-1-data-modeling"></a>实验室 1：数据建模
 
 ## <a name="scenario"></a>方案
 
-Bellows College 是一所教育机构，校园内有多座建筑。 目前，校园访问记录在纸质日报上。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 校园管理部门希望对其访客登记系统进行现代化改造。在该系统中，由安全人员控制对建筑物的访问，所有访问都必须由主办人预先登记和记录。
 
 在整个课程中，你将生成应用程序并执行自动化，以使 Bellows College 的管理和安全人员可以管理和控制校园建筑的出入情况。
 
-在本实验室中，你将访问环境，创建 Microsoft Dataverse 数据库并创建跟踪更改情况的解决方案。 你还将创建一个数据模型来满足以下要求：
+In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 - R1 - 跟踪计划校园访问的信息
 
@@ -33,7 +28,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 为了准备学习环境，你将：
 
-- 请参阅[数据模型文档](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)以获取元数据说明（表和关系）。 你可以按住 Ctrl 键单击或右键单击链接以在新窗口中打开数据模型文档。
+- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 - 创建“访问”表
 - 使用 Excel 电子表格导入 Visit 数据
 
@@ -171,7 +166,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 在此任务中，你将从 Excel 文件导入访问数据。
 
-1. 应将 Visits.xlsx 文件存储在桌面上。 如果不这样做，请下载 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)。
+1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
 
 2. 如果尚未登录，请登录 [https://make.powerapps.com](https://make.powerapps.com/)。
 
@@ -185,7 +180,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 7. 从显示的菜单中，选择“上传”按钮。
 
-8. 找到并选择之前下载的 Visits.xlsx 文件。 （请注意，上传文件可能需要一到两分钟。 如果收到存在映射错误的消息，请不要担心，我们接下来将会修复这些问题。）
+8. Bellows College 是一所教育机构，校园内有多座建筑。
 
 9. 单击“映射列”（注意：可能需要向右滚动才能看到“映射列”选项）。
 
@@ -208,7 +203,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 14. 单击右上角的“导入”以完成数据导入。
 
-**注意：** 将数据导入表可能需要几分钟时间。 如果遇到一些错误，请不要担心，这是正常的，不会影响课程的其余部分。
+目前，校园访问记录在纸质日报上。
 
 15. 单击“X”以关闭导入数据窗格。
 
