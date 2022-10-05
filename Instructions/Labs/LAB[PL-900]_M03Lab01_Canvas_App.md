@@ -8,9 +8,9 @@ lab:
 
 ## <a name="scenario"></a>方案
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College 是一所教育机构，校园内有多座建筑。 目前，校园访问记录在纸质日报上。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
-Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+目前，校园管理部门正在利用 Excel 电子表格来跟踪访客登记情况。 他们希望对其访客登记系统进行现代化改造。在该系统中，由安全人员控制对建筑物的访问，所有访问都必须由主办人预先登记和记录。
 
 在整个课程中，你将生成应用程序并执行自动化，以使 Bellows College 的管理和安全人员可以管理和控制校园建筑的出入情况。
 
@@ -37,11 +37,11 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 ### <a name="task-1-create-the-visits-app"></a>任务 \#1：创建 Visits 应用
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  导航到 <https://make.powerapps.com>。 你可能需要重新进行验证身份 - 单击“登录”并根据需要按照说明进行操作。
 
 2.  如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
 
-3.  If necessary, click the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> icon on the left side of the screen. Under the <bpt id="p1">**</bpt>Start from<ept id="p1">**</ept> section, select <bpt id="p2">**</bpt>Dataverse<ept id="p2">**</ept>.
+3.  如有必要，请单击屏幕左侧的“主页”图标。 在“开始”部分下，选择“Dataverse” 。
 
 4.  选择 Dataverse 连接。
 
@@ -60,17 +60,17 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 ![通过访问数据创建的画布应用。](media/2-canvas-app-from-data.png)
 
-9. Bellows College 是一所教育机构，校园内有多座建筑。
+9. 在应用设计器中，选择命令栏上的“预览应用”按钮（“播放”图标）。 （还可以通过按键盘上的 F5 来预览应用。）到处浏览一下，看看你的应用刚打开时是什么样子的。
 
 10. 通过选择屏幕右上角的 X 关闭应用预览。
 
-目前，校园访问记录在纸质日报上。
+恭喜，你已成功通过 Dataverse 表创建 Power App。 该过程的下一步是定制应用以匹配大学的品牌打造。 接下来的一系列步骤将引导你为该应用提供一些额外的自定义。
 
 ### <a name="task-2-modify-and-theme-the-newly-created-app"></a>任务 \#2：修改新创建的应用并为其添加主题
 
 在此任务中，你将在应用的三个屏幕（“浏览”、“详细信息”和“编辑”）上分别自定义标题文本并更改应用主题。
 
-1.  无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
+1.  你现在位于“浏览”屏幕上。 选择屏幕上的“访问”标签。
 
 1.  在屏幕右侧的“属性”选项卡下，将“文本”控件属性更新为“Bellows College 访客” 。
 
@@ -102,18 +102,18 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 在此任务中，你将测试新应用。
 
-1.  在应用程序设计器中打开应用程序后，选择“文件”，将该应用的名称更新为“Visits App”，然后选择“保存”  。
+1.  在应用设计器中打开应用程序后，选择 **“设置**”，在“ **常规** ”部分中更新应用的名称以 **访问应用**，单击 **“X** ”关闭设置屏幕，然后选择“ **保存**”。
 
 2.  选择后退箭头返回到应用。
 
 3.  使用左侧的导航，选择“BrowseScreen1”。
 
-4.  In the app designer, select the <bpt id="p1">**</bpt>preview the app<ept id="p1">**</ept> button (Play icon) on the command bar. <bpt id="p1">*</bpt>(You can also preview the app by pressing F5 on your keyboard.)<ept id="p1">*</ept>
+4.  在应用设计器中，选择命令栏上的“预览应用”按钮（“播放”图标）。 （还可以通过按键盘上的 F5 来预览应用。）
 
 4.  应用打开后，在“搜索项”字段中输入文本“Maria
     ”（请注意，库中的项如何根据在搜索字段中键入的内容进行筛选） 。
 
-5.  目前，校园管理部门正在利用 Excel 电子表格来跟踪访客登记情况。
+5.  显示“Maria Campbell”的“Contoso Suites”记录后，单击该行以导航打开该访问的详细信息。 （注意：如果显示多个 Contoso 套件 Maria Campbell 记录，请选择其中任何一个）
 
 6.  若要编辑记录，请选择应用右上角的“铅笔”图标。
 
@@ -121,7 +121,7 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 8.  在屏幕右上角，单击 X 图标以返回到画布应用编辑器。
 
-他们希望对其访客登记系统进行现代化改造。在该系统中，由安全人员控制对建筑物的访问，所有访问都必须由主办人预先登记和记录。
+祝贺你！ 你已创建并配置了第一个画布应用。
 
 ## <a name="challenges"></a>挑战
 
