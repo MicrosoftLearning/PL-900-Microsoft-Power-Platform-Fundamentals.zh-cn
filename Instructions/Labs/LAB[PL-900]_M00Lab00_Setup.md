@@ -2,13 +2,8 @@
 lab:
   title: 实验室 0：验证实验室环境
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154391"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>实验室 0：验证实验室环境
 
 ## <a name="scenario"></a>方案
@@ -39,7 +34,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 1. 请勿更改国家/地区。
 
-1. 对于电话号码，请输入 01234567890。
+1. 对于 **电话号码**，请输入0123456789。
 
 1. 填写你的帐户信息，然后选择“开始”以注册 Microsoft Power Platform 试用版。
 

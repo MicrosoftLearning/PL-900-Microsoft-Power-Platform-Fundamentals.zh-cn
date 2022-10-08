@@ -2,13 +2,8 @@
 lab:
   title: 实验室 5：如何生成简单仪表板
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154439"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>实验室 5：如何生成简单仪表板
 
 ## <a name="scenario"></a>方案
@@ -69,9 +64,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 1.  按“可视化效果”面板中的“饼图”图标插入图表 。
 
-2.  按下“字段”窗格中 bc_building 旁边的下拉箭头。 拖动“建筑”字段并将其放入“图例” 框。
+2.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 拖动“建筑”字段并将其放入“图例” 框。
 
-3.  按“字段”窗格中 bc_Visit 旁边的下拉箭头。 将“访问”字段拖放到“值”框中 。
+3.  将“访问”字段拖放到“值”框中 。
 
 4.  使用角柄调整饼图的大小，以便所有图表组件均可见。
 
@@ -107,7 +102,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 4.  输入“校园管理”作为“仪表板名称”， 然后按“固定活动页”。
 
-5.  弹出窗口将提示你仪表板已创建。 选择“转到仪表板”。
+5.  弹出窗口将提示你仪表板已创建。 选择“转到仪表板”****。
 
 6.  测试显示的饼图和条形图的交互性。
 

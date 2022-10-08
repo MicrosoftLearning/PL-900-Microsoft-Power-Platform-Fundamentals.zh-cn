@@ -2,13 +2,8 @@
 lab:
   title: 实验室 2：如何生成画布应用
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154427"
 ---
+
 # <a name="lab-2-how-to-build-a-canvas-app"></a>实验室 2：如何生成画布应用
 
 ## <a name="scenario"></a>方案
@@ -107,7 +102,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 在此任务中，你将测试新应用。
 
-1.  在应用程序设计器中打开应用程序后，选择“文件”，将该应用的名称更新为“Visits App”，然后选择“保存”  。
+1.  在应用设计器中打开应用程序后，选择 **“设置**”，在“ **常规** ”部分中更新应用的名称以 **访问应用**，单击 **“X** ”关闭设置屏幕，然后选择“ **保存**”。
 
 2.  选择后退箭头返回到应用。
 
