@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>方案
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College 是一所教育机构，校园内有多座建筑。 当前，校园访客被记录在纸质日记中。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
 校园管理部门希望对其访客登记系统进行现代化改造。在该系统中，由安全人员控制对建筑物的访问，所有访问都必须由主办人预先登记和记录。
 
@@ -31,11 +31,11 @@ Bellows College is an educational organization with multiple buildings on campus
 
 ## <a name="exercise-1-create-visit-notification-flow"></a>练习 1：创建访问通知流
 
-<bpt id="p1">**</bpt>Objective:<ept id="p1">**</ept> In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit when a visit is created.
+**目的：** 在本练习中，你将创建一个实现要求的 Power Automate 流。 应向访客发送一封电子邮件，其中包含创建访问时分配给访问的唯一代码。
 
 ### <a name="task-1-create-a-flow"></a>任务 \#1：创建流
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  导航到 <https://make.powerapps.com>。 你可能需要重新进行验证身份 - 单击“登录”并根据需要按照说明进行操作。
 
 2.  如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
 
@@ -59,11 +59,11 @@ Bellows College is an educational organization with multiple buildings on campus
 
     3.  为“范围”选择“组织” 
 
-    4.  On the trigger step, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>. Rename this trigger <bpt id="p1">**</bpt>"When a visit is added"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+    4.  在触发步骤上，单击省略号 (…)，然后单击“重命名” 。 将此触发器重命名为“添加访问时”。 这是一个很好的习惯，这样你和其他流编辑可以理解步骤的目的，而不必深入研究细节。
 
 ### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>任务 \#2：创建用于获取访客行的步骤
 
-1.  Bellows College 是一所教育机构，校园内有多座建筑。
+1.  选择“+新建步骤”。 必须执行此步骤来检索访客信息，包括电子邮件地址。
 
 2.  搜索“Dataverse”。
 
@@ -71,16 +71,16 @@ Bellows College is an educational organization with multiple buildings on campus
 
 4.  选择“Contacts”作为“表名称”
 
-5.  当前，校园访客被记录在纸质日记中。
+5.  选择“行 ID”字段。 请注意，此时会弹出一个窗口，用于选择“动态内容”或“表达式”。
 
-6.  无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
+6.  在“行 ID”字段中，选择动态内容列表中的“访客(值)”。 在此步骤中，你将查找创建的“访问的联系人”行以触发此流。 由于电子邮件地址是“联系人”表的一部分，因此需要此信息才能将电子邮件发送给访客。
 
-7.  On this action, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.
-        Rename this action <bpt id="p1">**</bpt>"Get the Visitor"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+7.  在此操作上，单击省略号 (...)，然后单击“重命名” 。
+        将此操作重命名为“获取访客”。 这是一个很好的习惯，这样你和其他流编辑可以理解步骤的目的，而不必深入研究细节。
 
 ### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>任务 \#3：创建用于向访客发送电子邮件的步骤
 
-1.  Click <bpt id="p1">**</bpt>+ New step<ept id="p1">**</ept>. This is the step that will send an email to the visitor.
+1.  单击“+ 新建步骤”。 这是向访客发送电子邮件的步骤。
 
 2.  搜索“邮件”，选择“Office 365 Outlook”连接器和“发送电子邮件 (V2)”操作 。
 
@@ -97,7 +97,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
 7.  在“电子邮件正文”中输入以下文本：
 
->   Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy &amp; paste all text first and then add dynamic content in the correct places.
+>   需将动态内容置于方括号中命名字段的位置。 建议先复制并粘贴所有文本，然后在正确的位置添加动态内容。
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Dear {First Name},
@@ -110,15 +110,15 @@ Bellows College is an educational organization with multiple buildings on campus
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-8.  Highlight the <bpt id="p1">**</bpt>{First Name}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>First Name<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>Get the Visitor<ept id="p2">**</ept> step.
+8.  突出显示 {First Name} 文本。 将该文本替换为“获取访客”步骤中的“名字”字段 。
 
-9.  Highlight the <bpt id="p1">**</bpt>{Scheduled Start}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled Start<ept id="p1">**</ept> field <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+9.  突出显示 {Scheduled Start} 文本。 将其替换为“添加访问”步骤中的“计划开始时间”字段。 
 
-10.  Highlight the <bpt id="p1">**</bpt>{Scheduled End}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled End<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+10.  突出显示 {Scheduled End} 文本。 将其替换为“添加访问”步骤中的“计划结束时间”字段。 
 
 11.  单击“ **保存**”。
 
-Leave this flow tab open for the next task. You flow should look approximately like the following:
+将此流选项卡保持打开状态以用于下一个任务。 流大致如下所示：
 
 ![流步骤示例。](media/4-Flow.png)
 
@@ -132,7 +132,7 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 3.  保持此浏览器标签页处于打开状态，然后导航回到流的上一个选项卡。
 
-4.  On the command bar, click <bpt id="p1">**</bpt>Test<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>Manually<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>Test<ept id="p2">**</ept>.
+4.  在命令栏上，单击“测试”。 选择“手动”，然后单击“测试”。 .
 
 5.  导航到打开了模型驱动应用的浏览器标签页。 
 
@@ -152,10 +152,10 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 8. 选择“保存并关闭”按钮。
 
-9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
+9. 导航到正在运行流测试的浏览器标签页。 在短暂的延迟之后，你应该会看到流正在运行。 你可以在这里发现流中的任何问题，或确认它已成功运行。
 
-After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
+在短暂的延迟之后，你应会在收件箱中看到一封电子邮件，因为你将 John Doe 的电子邮件填充为了你的个人电子邮件。 请注意，该电子邮件可能会进入“垃圾邮件”文件夹。
 
 ## <a name="challenges"></a>挑战
 
-- Play around with the formatting on the email. How can you make it more professional looking?
+- 在电子邮件中进行格式设置。 如何使电子邮件看起来更专业？
