@@ -162,52 +162,72 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 **目的：** 在本练习中，你要将示例数据导入 Dataverse 数据库。
 
-### <a name="task-1-import-the-visitsxlsx-file"></a>任务 \#1：导入 Visits.xlsx 文件
+### <a name="task-11-load-excel-file-to-onedrive"></a>任务 \#1.1：将 Excel 文件加载到 OneDrive
 
-在此任务中，你将从 Excel 文件导入访问数据。
-
-1. 应将 Visits.xlsx 文件存储在桌面上。 如果不这样做，请下载 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)。
+1. 应将 Visits.xlsx 文件存储在 C:/LabFiles 中的虚拟机上。 如果不这样做，请下载 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)。
 
 2. 如果尚未登录，请登录 [https://make.powerapps.com](https://make.powerapps.com/)。
 
 3. 如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
 
-4. 使用左侧的导航，展开 Dataverse，然后选择“表” 。
+4. 单击左上角的“Waffle”按钮以更改应用程序，然后选择“OneDrive”。 （设置 OneDrive 可能需要一些时间。 在屏幕上看到“OneDrive 已准备就绪”时，单击它。）
 
-5. 查找并打开在上一个练习中创建的“访问”表。
+5. 单击顶部菜单中的“上传”，然后选择“文件”。 
 
-6. 使用顶部的菜单，选择“导入”旁边的下拉箭头，选择“从 Excel 导入数据” 。
+6. 找到并选择 Visits.xlsx 文件，然后单击“打开” 。
 
-7. 从显示的菜单中，选择“上传”按钮。
+ 注意：此文件位于计算机上的“所有文件”文件夹中 。
+ 
+### <a name="task-12-create-a-dataflow"></a>任务 \#1.2：创建数据流
 
-8. 找到并选择之前下载的 Visits.xlsx 文件。 （请注意，上传文件可能需要一到两分钟。 如果收到存在映射错误的消息，请不要担心，我们接下来将会修复这些问题。）
+1. 如果尚未登录，请登录 [https://make.powerapps.com](https://make.powerapps.com/)。
 
-9. 单击“映射列”（注意：可能需要向右滚动才能看到“映射列”选项）。
+2. 如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
 
-10. 如下所示映射列：
+3. 使用左侧的导航，展开 Dataverse，然后选择“表” 。
 
-| 访问列| 源值 |
+4. 查找并打开在上一个练习中创建的“访问”表。
+
+5. 使用顶部的菜单，选择“导入”旁边的下拉箭头，选择“导入数据” 。
+
+6. 在“选择数据源”对话框中，选择“Excel 工作簿”。 
+
+7. 选择“链接到文件”选项。 单击“浏览 OneDrive”。 如果出现系统提示，请使用你的 Microsoft 365 凭据登录。
+
+8. 选择已在 OneDrive 中上传的 Visits.xlsx 文件，然后单击“选择” 。
+
+9. 单击“下一步”。
+
+10. 在“选择数据”下，选中“Visits”Excel 工作簿旁边的框。 
+
+11. 单击“下一步”。 不要离开此页面。
+
+12. 单击“下一步”。
+
+13. 在“映射表”部分的“加载设置”下，选择“加载到现有表  ”。
+
+14. 在“目标表”下拉菜单中，选择以 crXXX_visit 开头的表名称（其中，XXX 是一组随机字母和数字） 
+
+15. 在“列映射”上。 将列映射到其相应的目标列。
+
+| 目标列| 源值 |
 | - | - |
-| 实际结束时间| actual end |
-| 实际开始时间| actual start |
-| 代码| code |
-| 名称| name |
-| 计划结束| scheduled end |
-| 计划的启动| scheduled start |
+| crxxx_ActualEnd| actual end |
+| crxxx_ActualStart| actual start |
+| crxxx_Code| code |
+| crxxx_Name| name |
+| crxxx_ScheduledEnd| scheduled end |
+| crxxx_ScheduledStart| scheduled start |
 
-11. 将所有其余字段保留为“未设置”。
+16. 单击“下一步”。
 
-12. 在屏幕的右上角，单击“保存更改”。
+17. 选择“手动刷新”。
 
-13. 在“导入数据”屏幕上，验证映射状态是否显示“映射成功”。
-
-14. 单击右上角的“导入”以完成数据导入。
+18. 单击“发布” 。
 
 **注意：** 将数据导入表可能需要几分钟时间。 如果遇到一些错误，请不要担心，这是正常的，不会影响课程的其余部分。
 
-15. 单击“X”以关闭导入数据窗格。
-
-### <a name="task-2-verify-data-import"></a>任务 \#2：验证数据导入
+### <a name="task-3-verify-data-import"></a>任务 \#3：验证数据导入
 
 1. 导入数据后，使用屏幕左侧的导航再次选择 Visit 表。
 
