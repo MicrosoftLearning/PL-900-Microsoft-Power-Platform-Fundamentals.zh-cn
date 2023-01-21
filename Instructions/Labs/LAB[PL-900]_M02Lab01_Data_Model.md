@@ -14,7 +14,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 在整个课程中，你将生成应用程序并执行自动化，以使 Bellows College 的管理和安全人员可以管理和控制校园建筑的出入情况。
 
-在本实验室中，你将访问环境，创建 Microsoft Dataverse 数据库并创建跟踪更改情况的解决方案。 你还将创建一个数据模型来满足以下要求：
+在本实验室中，你将访问环境，创建 Microsoft Dataverse 数据库。 你还将创建一个数据模型来满足以下要求：
 
 - R1 - 跟踪计划校园访问的信息
 
@@ -23,6 +23,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 - R3 - 安排、记录和管理访问
 
 最后，你将示例数据导入 Microsoft Dataverse。
+
 
 ## <a name="high-level-lab-steps"></a>概要实验室步骤
 
@@ -40,9 +41,11 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 - 命名约定 - 仔细键入名称。
 
+
 ## <a name="exercise-1-create-new-table"></a>练习 1：创建新表
 
 **目的：** 在本练习中，你将为访问创建新的自定义表。
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>任务 \#1：创建 Visit 表和列
 
@@ -210,14 +213,14 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 15. 在“列映射”上。 将列映射到其相应的目标列。
 
-| 目标列| 源值 |
-| - | - |
-| crxxx_ActualEnd| actual end |
-| crxxx_ActualStart| actual start |
-| crxxx_Code| code |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| scheduled end |
-| crxxx_ScheduledStart| scheduled start |
+| 目标列  | 源值   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | actual end      |
+| crxxx_ActualStart    | actual start    |
+| crxxx_Code           | code            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | scheduled end   |
+| crxxx_ScheduledStart | scheduled start |
 
 16. 单击“下一步”。
 
