@@ -4,9 +4,9 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>实验室 1：数据建模
+# 实验室 1：数据建模
 
-## <a name="scenario"></a>方案
+## 方案
 
 Bellows College 是一所教育机构，校园内有多座建筑。 目前，校园访问记录在纸质日报上。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
@@ -25,29 +25,29 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 最后，你将示例数据导入 Microsoft Dataverse。
 
 
-## <a name="high-level-lab-steps"></a>概要实验室步骤
+## 概要实验室步骤
 
 为了准备学习环境，你将：
 
 - 请参阅[数据模型文档](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)以获取元数据说明（表和关系）。 你可以按住 Ctrl 键单击或右键单击链接以在新窗口中打开数据模型文档。
-- 创建“访问”表
+- 创建 Visit 表
 - 使用 Excel 电子表格导入 Visit 数据
 
-## <a name="prerequisites"></a>先决条件
+## 先决条件
 
 - 完成“模块 0 实验室 0 - 验证实验室环境”
 
-## <a name="things-to-consider-before-you-begin"></a>开始前要考虑的事项
+## 开始前要考虑的事项
 
 - 命名约定 - 仔细键入名称。
 
 
-## <a name="exercise-1-create-new-table"></a>练习 1：创建新表
+## 练习 1：创建新表
 
 **目的：** 在本练习中，你将为访问创建新的自定义表。
 
 
-### <a name="task-1-create-visit-table-and-columns"></a>任务 \#1：创建 Visit 表和列
+### 任务 \#1：创建 Visit 表和列
 
 “访问”表将包含有关校园访问的信息，包括访客、每次访问的计划时间和实际时间。
 
@@ -161,11 +161,11 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
     - 单击“保存” 。
 
-## <a name="exercise-2-import-data"></a>练习 2：导入数据
+## 练习 2：导入数据
 
 **目的：** 在本练习中，你要将示例数据导入 Dataverse 数据库。
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>任务 \#1.1：将 Excel 文件加载到 OneDrive
+### 任务 \#1.1：将 Excel 文件加载到 OneDrive
 
 1. 应将 Visits.xlsx 文件存储在 C:/LabFiles 中的虚拟机上。 如果不这样做，请下载 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)。
 
@@ -181,7 +181,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
  注意：此文件位于计算机上的“所有文件”文件夹中 。
  
-### <a name="task-12-create-a-dataflow"></a>任务 \#1.2：创建数据流
+### 任务 \#1.2：创建数据流
 
 1. 如果尚未登录，请登录 [https://make.powerapps.com](https://make.powerapps.com/)。
 
@@ -230,7 +230,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 **注意：** 将数据导入表可能需要几分钟时间。 如果遇到一些错误，请不要担心，这是正常的，不会影响课程的其余部分。
 
-### <a name="task-3-verify-data-import"></a>任务 \#3：验证数据导入
+### 任务 \#3：验证数据导入
 
 1. 导入数据后，使用屏幕左侧的导航再次选择 Visit 表。
 

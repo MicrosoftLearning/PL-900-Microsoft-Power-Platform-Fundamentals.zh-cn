@@ -4,9 +4,9 @@ lab:
   module: 'Module 5: Get Started with Power BI'
 ---
 
-## <a name="lab-5-how-to-build-a-simple-dashboard"></a>实验室 5：如何生成简单仪表板
+## 实验室 5：如何生成简单仪表板
 
-## <a name="scenario"></a>方案
+## 方案
 
 Bellows College 是一所教育机构，校园内有多座建筑。 当前，校园访客被记录在纸质日记中。 无法始终如一地捕获信息，也无法收集和分析有关整个校园的访问数据。
 
@@ -16,7 +16,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 在本实验室中，你将构建一个 Power BI 报表和仪表板，以可视化方式显示有关校园访问的数据。
 
-## <a name="high-level-lab-steps"></a>概要实验室步骤
+## 概要实验室步骤
 
 我们将按照以下步骤设计和创建 Power BI 仪表板：
 
@@ -24,43 +24,46 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 -   利用用户自然语言查询来生成额外的可视化效果
 
-## <a name="prerequisites"></a>先决条件
+## 先决条件
 
 - 完成“模块 0 实验室 0 - 验证实验室环境”
 - 完成“模块 2 实验室 1 - 数据建模”
 
-## <a name="things-to-consider-before-you-begin"></a>开始前要考虑的事项
+## 开始前要考虑的事项
 
 -   报告的目标受众是谁？
 -   受众将如何使用报告？ 典型的设备？ 位置？
 -   你是否有足够的数据进行可视化？
 -   可以使用哪些可能的特征来分析访问数据？
 
-## <a name="exercise-1-create-power-bi-report"></a>练习 1：创建 Power BI 报表
+## 练习 1：创建 Power BI 报表
 
 **目的：** 在本练习中，你将根据在上一个练习中使用的 Excel 电子表格的数据创建 Power BI 报表。
 
-### <a name="task-1-prepare-power-bi-service"></a>任务 \#1：准备 Power BI 服务
+### 任务 \#1：准备 Power BI 服务
 
-1.  在计算机上下载并保存 [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix)。
+1.  应将 visits.pbix 文件存储在 C:/LabFiles 中的虚拟机上。 下载 [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) 并保存到计算机（如果计算机中尚不存在此文件，请执行此操作）。
 
-2.  根据需要导航到 <https://app.powerbi.com/> 并登录。
+2.  打开新选项卡，导航到 <https://app.powerbi.com/> 并根据需要登录。
 
-3.  在屏幕的左下角，选择“获取数据”
+3.  在左侧导航栏中选择“我的工作区”。
 
-4.  在“新建内容”部分的“文件”下选择“获取”按钮  。
+5.  依次选择“上传”和“浏览” 。
 
-5.  选择“本地文件”。
+6.  找到并选择你之前下载的 visits.pbix 文件。 
 
-6.  找到并选择你之前下载的 visits.pbix 文件。
+7.  数据加载完成后，选择 visits 报表。
 
-7.  数据加载完成后，展开“我的工作区”，并选择“visits”报表（请注意，“类型”设置为“报表”）。
+    请注意，“类型”设置为“报表”，请勿选择“数据集”。
 
-8.  单击 **“编辑”** 。 如果“编辑”菜单项不可见，请单击“...”，然后选择“编辑”。  
+8.  选择“编辑”  。 
+
+    如果“编辑”菜单项不可见，请单击省略号“…”，然后选择“编辑”  。
 
 现在，你已经设置了 Power BI 服务以用于你的实验室。
 
-### <a name="task-2-create-chart-and-time-visualizations"></a>任务 \#2：创建图表和时间可视化
+
+### 任务 \#2：创建图表和时间可视化
 
 1.  按“可视化效果”面板中的“饼图”图标插入图表 。
 
@@ -90,9 +93,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 11. 按下“保存”以保存进行中的工作。
 
-## <a name="exercise-2-create-power-bi-dashboard"></a>练习 2：创建 Power BI 仪表板
+## 练习 2：创建 Power BI 仪表板
 
-### <a name="task-1-create-power-bi-dashboard"></a>任务 \#1：创建 Power BI 仪表板
+### 任务 \#1：创建 Power BI 仪表板
 
 1.  打开上一个任务中生成的报表。
 
@@ -106,7 +109,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 6.  测试显示的饼图和条形图的交互性。
 
-### <a name="task-2-add-visualizations-using-natural-language"></a>任务 \#2：使用自然语言添加可视化
+### 任务 \#2：使用自然语言添加可视化
 
 1.  在“校园管理”仪表板内，选择顶部的“提出与数据有关的问题”栏。
 
