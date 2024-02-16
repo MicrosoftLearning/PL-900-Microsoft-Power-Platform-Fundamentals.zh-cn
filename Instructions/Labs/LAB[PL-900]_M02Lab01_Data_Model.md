@@ -41,7 +41,8 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 开始前要考虑的事项
 
-- 命名约定 - 仔细键入名称。
+- 命名约定 - 请仔细输入名称。
+
 
 # 练习 1：创建新表
 
@@ -53,9 +54,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 我们希望为每次访问分配一个唯一的号码，当访客在访问签到过程中被询问时，他/她可以很容易地输入并解释该号码。
 
-1.  登录到 <https://make.powerapps.com>（如果尚未登录） 
+1.  登录到 `https://make.powerapps.com`（如果尚未登录）
 
-1.  在右上角的“环境”菜单中，确保已选择“实践”环境 。 
+1.  在右上角的“环境”菜单中，确保已选择“Dev One”环境。******** 
 
 1.  使用左侧导航栏，选择“表”。
 
@@ -176,11 +177,11 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 1.  应将 Visits.xlsx 文件存储在 C:/LabFiles 中的虚拟机上。 如果不这样做，请下载 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)。
 
-2.  如果尚未登录，请登录 [https://make.powerapps.com](https://make.powerapps.com/)。 
+2.  如果尚未登录，请登录到 `https://make.powerapps.com`
 
-3.  如果尚未选择“[我的初始] 练习”环境，请在右上角选择它。
+3.  选择右上角的“Dev One”**** 环境（如果尚未选择）。
 
-4.  选择左上角的“Waffle”按钮以更改应用程序，然后选择“OneDrive”。 （设置 OneDrive 可能需要一些时间。 在屏幕上看到“OneDrive 已准备就绪”时，选择它。）
+4.  选择左上角的应用启动器（Waffle 按钮），以更改应用程序并选择“OneDrive”****。 （设置 OneDrive 可能需要一些时间。 在屏幕上看到“OneDrive 已准备就绪”时，选择它。）
 
 5.  从菜单中选择“+添加新项”，然后选择“文件上传”。
 
@@ -191,9 +192,9 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 
 ## 任务 \#2：创建数据流
 
-1.  登录到 <https://make.powerapps.com>（如果尚未登录） 
+1.  登录到 `https://make.powerapps.com`（如果尚未登录）
 
-2.  在右上角的“环境”菜单中，确保已选择“实践”环境 。 
+2.  在右上角的“环境”菜单中，确保已选择“Dev One”环境。******** 
 
 3.  使用左侧导航栏，选择“表”。 
 
@@ -246,4 +247,5 @@ Bellows College 是一所教育机构，校园内有多座建筑。 目前，校
 2.  验证是否可在“访问列和数据”部分下看到导入的数据。
 
 恭喜，你已成功创建新表并导入了数据。
+
 
