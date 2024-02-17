@@ -46,7 +46,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 1.  虚拟机上应存储了一个 visits.pbix 文件，该文件位于桌面上的 AllFiles 文件夹中。 下载 [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) 并保存到计算机（如果计算机中尚不存在此文件，请执行此操作）。
 
-2.  打开新选项卡，导航到 <https://app.powerbi.com/> 并根据需要登录。
+2.  打开新选项卡，导航到 `https://app.powerbi.com` 并根据需要登录。
 
 3.  在左侧导航栏中选择“我的工作区”。
 
@@ -102,7 +102,7 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 
 1.  打开上一个任务中生成的报表。
 
-2.  在菜单上选择“固定到仪表板”。 根据布局，可能需要选择“...”以显示更多选项。
+2.  在菜单上选择“固定到仪表板”。 根据布局，可能需要选择省略号菜单“...”以显示更多选项****。
 
 3.  在“固定到仪表板”提示上选择“新建仪表板” 。
 
@@ -130,3 +130,4 @@ Bellows College 是一所教育机构，校园内有多座建筑。 当前，校
 你的仪表板应类似如下所示：
 
 ![](media/5-powerbi-result.png)
+
