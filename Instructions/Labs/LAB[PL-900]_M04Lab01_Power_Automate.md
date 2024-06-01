@@ -1,7 +1,7 @@
 ---
 lab:
   title: 实验室 4：如何构建自动解决方案
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # 实验室 4：如何构建自动解决方案

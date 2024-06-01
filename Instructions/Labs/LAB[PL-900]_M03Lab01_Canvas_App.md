@@ -1,7 +1,7 @@
 ---
 lab:
   title: 实验室 2：如何生成画布应用
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # 实验室 2：如何生成画布应用

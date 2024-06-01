@@ -1,7 +1,7 @@
 ---
 lab:
   title: 实验室 1：数据建模
-  module: 'Module 2: Introduction to Microsoft Dataverse'
+  module: 'Module 2: Identify foundational components of Microsoft Power Platform'
 ---
 
 # 实验室 1：数据建模
