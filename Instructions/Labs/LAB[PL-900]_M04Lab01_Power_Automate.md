@@ -1,7 +1,7 @@
 ---
 lab:
   title: 实验室 4：如何构建自动解决方案
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # 实验室 4：如何构建自动解决方案
@@ -140,8 +140,6 @@ Bellows College 是一所教育机构，拥有多个校园并开设有多门课�
 1. 填写费用报告记录，如下所示：****
 
     - **报告名称：** 测试报告
-
-    - **报告总金额：** 750.00 美元
 
     - **报告截止日期：** 明天 
 

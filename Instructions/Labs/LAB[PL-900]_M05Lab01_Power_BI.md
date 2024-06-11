@@ -1,7 +1,7 @@
 ---
 lab:
   title: 实验室 5：如何生成简单仪表板
-  module: 'Module 5: Get Started with Power BI'
+  module: 'Module 5: Describe the capabilities of Microsoft Power BI'
 ---
 
 ## 实验室 5：如何生成简单仪表板
