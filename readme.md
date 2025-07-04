@@ -1,4 +1,4 @@
-# PL-900：Power Platform 基础知识
+# PL-900：Microsoft Power Platform 简介
 
 - **[下载最新学生手册和 AllFiles 内容](https://learningdownloadcenter.microsoft.com/)**
 - **你是 MCT 吗？** - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
