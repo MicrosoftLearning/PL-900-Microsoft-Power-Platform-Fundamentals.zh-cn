@@ -61,10 +61,10 @@ lab:
 ## 练习 2：下载图像
 
 1. 在租户中打开浏览器窗口，然后输入 https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles。
-1. 屏幕截图中会显示图像。
+2. 屏幕截图中会显示图像。
 
-    ![映像文件。](media/images.png)
+![映像文件。](media/images.png)
 
-1. 单独打开每个图像，然后通过选择“下载”图标进行下载****。
+3. 单独打开每个图像，然后通过选择“下载”图标进行下载****。
 
-    ![图像下载按钮。](media/download-image.png)
+![图像下载按钮。](media/download-image.png)
