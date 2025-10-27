@@ -232,3 +232,6 @@ Contoso 当前在其 Dataverse 实例中存储联系人信息，以便使用 Dat
     ![已完成的会议报名窗体的屏幕截图。  ](media/Session-registration-form.png)
 
 1.  选择“保存并关闭”按钮。
+
+
+
