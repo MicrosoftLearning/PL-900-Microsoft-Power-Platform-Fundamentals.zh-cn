@@ -208,7 +208,7 @@ Contoso Consulting 是一家专门从事 IT 和 AI 咨询服务的专业服务�
     最后，我们将配置“设备列表”库，以基于“搜索控件”字段中输入的文本填充其数据****。
 
 1.  选择之前创建的“设备列表”库****。
-1.  在“项目”属性中，输入以下公式****：`Search([@'Equipments'], EquipSearchInput.Text, 'Equipment Name',Category)`
+1.  在“项目”属性中，输入以下公式****：`Search([@'Equipment'], EquipSearchInput.Text, 'Equipment Name',Category)`
 
     ![项目 PowerFx 公式的屏幕截图。](media/powerfx-formula.png)
 
@@ -261,7 +261,7 @@ Contoso Consulting 是一家专门从事 IT 和 AI 咨询服务的专业服务�
     3.  最小宽度：**** 150
     4.  高度：**** 40
        
-1. 选择 SecondRecord1 容器，选择“插入”按钮********。
+1. 选择 SelectedRecord1 容器，选择“插入”按钮********。
 1. 在“搜索”字段中，输入“保存”，然后选择“保存”图标************。
 1. 按如下所示配置“保存”按钮****：
 
@@ -335,6 +335,8 @@ Contoso Consulting 是一家专门从事 IT 和 AI 咨询服务的专业服务�
 1.  在 Power Apps Studio 中，选择“保存”按钮****。
 1.  选择**发布**按钮。
 1.  选择“发布此版本”****。
+
+
 
 
 
